@@ -1,0 +1,42 @@
+package com.LoopDrill.ecom.config;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.Value;
+
+@Component
+@Configuration
+@Order(Ordered.HIGHEST_PRECEDENCE)
+public class SimpleConsFilter implements Filter{
+	
+    @Value("${app.clientAppUrl}")
+	private String clientAppUrl = "";
+	
+	public SimpleCorsFilter() {
+		
+	}
+
+	@Override
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
+		HttpServletResponse response2 = (HttpServletResponse) res;
+		HttpServletRequest request2 = (HttpServletRequest) req;
+		
+		Map<String, String> map = new HashMap<>();
+	}
+	
+}

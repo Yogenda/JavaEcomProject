@@ -1,0 +1,5 @@
+package com.LoopDrill.ecom.dto;
+
+public class SignupRequest {
+
+}

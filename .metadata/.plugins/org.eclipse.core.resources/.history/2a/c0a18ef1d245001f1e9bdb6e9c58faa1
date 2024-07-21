@@ -1,0 +1,5 @@
+package com.LoopDrill.ecom.repository;
+
+public interface UserRepository {
+
+}

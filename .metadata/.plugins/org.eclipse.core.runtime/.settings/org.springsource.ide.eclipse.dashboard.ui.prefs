@@ -1,0 +1,4 @@
+dashboard.feed.springio.migration=true
+eclipse.preferences.version=1
+org.springsource.ide.eclipse.dashboard.uidashboard.startup=false
+org.springsource.ide.eclipse.dashboard.uidashboard.update.collapse=2

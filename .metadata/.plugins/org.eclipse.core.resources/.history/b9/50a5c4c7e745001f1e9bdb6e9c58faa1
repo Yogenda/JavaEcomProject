@@ -1,0 +1,5 @@
+package com.LoopDrill.ecom.service.auth;
+
+public interface AuthService {
+
+}

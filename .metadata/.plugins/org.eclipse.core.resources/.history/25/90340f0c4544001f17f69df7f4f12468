@@ -1,0 +1,14 @@
+package com.LoopDrill.ecom.entity;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name="users")
+public class user {
+	
+	@Id
+	@GeneratedValue(strategy = )
+	private Long id;
+}

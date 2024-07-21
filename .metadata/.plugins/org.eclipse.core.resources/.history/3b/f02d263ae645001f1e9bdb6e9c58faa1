@@ -1,0 +1,17 @@
+package com.LoopDrill.ecom.service.auth;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.LoopDrill.ecom.repository.UserRepository;
+
+@Service
+public class AuthServiceImp implements AuthService {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private BCryptPasswordEncoder bCryptPasswordEncoder;
+}
